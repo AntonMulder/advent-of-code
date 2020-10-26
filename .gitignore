@@ -1,0 +1,4 @@
+venv
+new-puzzle.sh
+*.pyc
+.idea
