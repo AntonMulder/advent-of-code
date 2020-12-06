@@ -2,10 +2,9 @@ from functools import reduce
 from itertools import combinations
 
 
-
 def run(puzzle_input):
-    match = list(filter(lambda x: sum(x) == 2020,  combinations(puzzle_input, r=3)))[0]
-    return reduce(lambda x, y: x*y, match)
+    match = list(filter(lambda x: sum(x) == 2020, combinations(puzzle_input, r=3)))[0]
+    return reduce(lambda x, y: x * y, match)
 
 
 if __name__ == '__main__':

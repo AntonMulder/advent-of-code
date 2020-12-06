@@ -3,8 +3,8 @@ import re
 
 def next_password(password, index=7):
     if password[index] == 'z':
-        return next_password(password[:index] + 'a' + password[index+1:], index-1)
-    return password[:index] + chr(ord(password[index]) + 1) + password[index+1:]
+        return next_password(password[:index] + 'a' + password[index + 1:], index - 1)
+    return password[:index] + chr(ord(password[index]) + 1) + password[index + 1:]
 
 
 def run(password):

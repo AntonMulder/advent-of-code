@@ -7,8 +7,8 @@ def run(puzzle_input):
     matches = (re.match(input_re, x) for x in puzzle_input)
 
     def is_valid(m):
-        return bool(m['password'][int(m['min']) - 1] == m['char']) ^ \
-               bool(m['password'][int(m['max']) - 1] == m['char'])
+        return (bool(m['password'][int(m['min']) - 1] == m['char']) ^
+                bool(m['password'][int(m['max']) - 1] == m['char']))
 
     valid_passwords = filter(lambda x: is_valid(x), matches)
 
