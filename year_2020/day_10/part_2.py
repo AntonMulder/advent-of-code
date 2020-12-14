@@ -6,7 +6,7 @@ def run(puzzle_input):
 
     sorted_adapters = sorted(puzzle_data)
 
-    counter = Counter((0,))
+    counter = Counter((0, ))
     for adapter in sorted_adapters:
         counter[adapter] = sum(counter[x] for x in range(adapter - 3, adapter))
     return counter[max(sorted_adapters)]
