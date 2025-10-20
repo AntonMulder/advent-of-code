@@ -1,7 +1,7 @@
+from utils.io import read_input
 from utils.point import DOWN, LEFT, RIGHT, UP, Point
 
-with open("input") as f:
-    data = f.read()
+data = read_input()
 
 santa_location = Point(0, 0)
 robot_location = Point(0, 0)

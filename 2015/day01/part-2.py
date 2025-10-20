@@ -1,4 +1,6 @@
-data = open("input").read()
+from utils.io import read_input
+
+data = read_input()
 
 floor = 0
 for step, x in enumerate(data, start=1):

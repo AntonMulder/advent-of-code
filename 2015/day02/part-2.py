@@ -1,4 +1,6 @@
-data = open("input").readlines()
+from utils.io import read_input_lines
+
+data = read_input_lines()
 
 ribbon = 0
 for present in data:
